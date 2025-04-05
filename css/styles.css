@@ -92,20 +92,17 @@ border: 1px solid #bdc3c7;
     margin-bottom: 0.5rem;
 }
 
-. control-panel button {
-	display: block;
-	width:  100%;
+button {
     background-color: #3498db;
     color: white;
     border: none;
-    padding: 0.6rem;
-    margin: 0.5rem 0;
-    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    margin: 0.3rem 0;
+    border-radius: 3px;
     cursor: pointer;
+    width: 100%;
     transition: background-color
 0.2s;
-    text-align:   center;
-    box-sizing: border-box;
 }
 
 button:hover {
