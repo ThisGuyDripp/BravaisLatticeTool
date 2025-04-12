@@ -1,4 +1,20 @@
 /*Goobal Styles */
+<div class="app-container">
+    <!-- Content here -->
+</div>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+.main-content {
+    display: flex;
+    flex-direction: row; /* Ensure horizontal layout on desktop */
+}
+
+.control-panel {
+    flex: 0 0 300px; /* Fixed width for the control panel */
+}
+
+.visualization-container {
+    flex: 1; /* Take up remaining space */
+}
 *{
    margin: 0;
    padding: 0;
