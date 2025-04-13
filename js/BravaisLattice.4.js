@@ -1,7 +1,7 @@
-﻿/**
- * BravaisLattice.js
- * Generates the atomic structure for different Bravais lattice types
- */
+/**
+* BravaisLattice.js
+* Generates the atomic structure for different Bravais lattice types
+*/
 class BravaisLattice {
     constructor(type = 'simple-cubic') {
         this.type = type;
@@ -136,7 +136,6 @@ class BravaisLattice {
     getAtoms() {
         return this.atoms;
     }
-
     /**
      * Get the unit cell vertices
      * @returns {Array} Array of unit cell corner positions
@@ -158,8 +157,7 @@ class BravaisLattice {
             [baseX + c[0], baseY + c[1], baseZ + c[2]],
             [baseX + a[0] + c[0], baseY + a[1] + c[1], baseZ + a[2] + c[2]],
             [baseX + b[0] + c[0], baseY + b[1] + c[1], baseZ + b[2] + c[2]],
-            // 7: a + b + c
-            [baseX + a[0] + b[0] + c[0], baseY + a[1] + b[1] + c[1], baseZ + a[2] + b[2] + c[2]]
+            [baseX + a[0] + b[0] + c[0], baseY + a[1] + b[1] + c[1], baseZ + a[2] + b[2] + c[2]] // 7: a + b + c
         ];
     }
 }

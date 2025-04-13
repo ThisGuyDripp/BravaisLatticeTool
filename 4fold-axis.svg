@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Circular base [[1]] -->
+  <circle cx="24" cy="24" r="20" fill="none" stroke="#2196F3" stroke-width="3"/>
+  
+  <!-- Rotation indicators [[6]] -->
+  <path d="M24 4v8M24 44v-8M4 24h8M44 24h-8" 
+        stroke="#2196F3" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Diagonal markers [[3]] -->
+  <path d="M34 14l-5.66 5.66M14 34l5.66-5.66M34 34l-5.66-5.66M14 14l5.66 5.66" 
+        stroke="#2196F3" stroke-width="2" stroke-linecap="round"/>
+</svg>
