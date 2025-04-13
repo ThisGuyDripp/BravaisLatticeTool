@@ -92,7 +92,7 @@ class BravaisLattice {
         
         const cx = c * Math.cos(betaRad);
         const cy = c * (Math.cos(alphaRad) - Math.cos(betaRad) * Math.cos(gammaRad)) / Math.sin(gammaRad);
-        const cz = Math.sqrt(c*c - cx*cx - cy*cy);
+        const cz = Math.sqrt(c * c - cx * cx - cy * cy);
         
         return [
             [ax, ay, az], // a vector
@@ -154,5 +154,11 @@ class BravaisLattice {
             [baseX, baseY, baseZ],                               // 0: Origin
             [baseX + a[0], baseY + a[1], baseZ + a[2]],          // 1: Along a
             [baseX + b[0], baseY + b[1], baseZ + b[2]],          // 2: Along b
-            [baseX + a[0] + b[0], baseY + a[1] + b[1],
-             
+            [baseX + a[0] + b[0], baseY + a[1] + b[1], baseZ + a[2] + b[2]],// 3: Along a+b             
+            [baseX + c[0], baseY + c[1], baseZ + c[2]],
+            [baseX + a[0] + c[0], baseY + a[1] + c[1], baseZ + a[2] + c[2]], // 5: a + c
+            [baseX + b[0] + c[0], baseY + b[1] + c[1], baseZ + b[2] + c[2]], // 6: b + c
+            [baseX + a[0] + b[0] + c[0], baseY + a[1] + b[1] + c[1], baseZ + a[2] + b[2] + c[2]] // 7: a + b + c
+        ];
+    }
+}
